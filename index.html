@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>دفعتنا - التعليم المتطور</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="src/Css/main.css" />
+    <link rel="stylesheet" href="src/Css/settings.css" />
+    <link rel="stylesheet" href="src/Css/notifications.css" />
+    <link rel="stylesheet" href="src/Css/lectures.css" />
+</head>
+
+<body>
+    <div class="container">
+
+        <!---------------------| Home Content Section |--------------------->
+        <div class="home-content" id="homeContent">
+            <header class="header">
+                <div class="header-content">
+                    <i class="fas fa-cog header-settings-icon" tabindex="0" role="button" aria-label="الإعدادات"></i>
+                    <h1>دفعتنا</h1>
+                    <p id="greetingText"></p>
+                </div>
+            </header>
+
+            <div class="grid-container">
+                <div class="grid">
+                    <div class="grid-item lectures" tabindex="0" role="button" aria-label="المحاضرات">
+                        <div class="grid-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <span class="grid-text">المحاضرات</span>
+                    </div>
+
+                    <div class="grid-item summaries" tabindex="0" role="button" aria-label="الملخصات">
+                        <div class="grid-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <span class="grid-text">الملخصات</span>
+                    </div>
+
+                    <div class="grid-item videos" tabindex="0" role="button" aria-label="الفيديوهات">
+                        <div class="grid-icon">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <span class="grid-text">الفيديوهات</span>
+                    </div>
+
+                    <div class="grid-item schedules" tabindex="0" role="button" aria-label="الجداول">
+                        <div class="grid-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <span class="grid-text">الجداول</span>
+                    </div>
+
+                    <div class="grid-item buildings" tabindex="0" role="button" aria-label="المباني">
+                        <div class="grid-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <span class="grid-text">المباني</span>
+                    </div>
+
+                    <div class="grid-item statistics" tabindex="0" role="button" aria-label="الإحصائيات">
+                        <div class="grid-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <span class="grid-text">الإحصائيات</span>
+                    </div>
+
+                    <div class="grid-item links" tabindex="0" role="button" aria-label="الروابط">
+                        <div class="grid-icon">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                        <span class="grid-text">الروابط</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---------------------| Lectures Page Section |--------------------->
+        <div class="page" id="lectures" tabindex="0" role="region" aria-label="صفحة المحاضرات">
+            <div class="page-header-bar">
+                <button class="back-button" tabindex="0" role="button" aria-label="العودة للصفحة الرئيسية">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <span class="header-page-title">المحاضرات</span>
+                <span class="spacer"></span>
+            </div>
+            <div class="page-header">
+                <div class="page-icon">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <h2 class="page-title">المحاضرات</h2>
+                <p class="page-description">استكشف مكتبة شاملة من المحاضرات التفاعلية والموارد التعليمية المتطورة</p>
+            </div>
+        </div>
+
+        <!---------------------| Summaries Page Section |--------------------->
+        <div class="page" id="summaries" tabindex="0" role="region" aria-label="صفحة الملخصات">
+            <div class="page-header-bar">
+                <button class="back-button" tabindex="0" role="button" aria-label="العودة للصفحة الرئيسية">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <span class="header-page-title">الملخصات</span>
+                <span class="spacer"></span>
+            </div>
+            <div class="page-header">
+                <div class="page-icon">
+                    <i class="fas fa-file-alt"></i>
+                </div>
+                <h2 class="page-title">الملخصات</h2>
+                <p class="page-description">ملخصات مبسطة ومنظمة لجميع المواد الدراسية والمفاهيم الأساسية</p>
+            </div>
+        </div>
+
+        <!---------------------| Videos Page Section |--------------------->
+        <div class="page" id="videos" tabindex="0" role="region" aria-label="صفحة الفيديوهات">
+            <div class="page-header-bar">
+                <button class="back-button" tabindex="0" role="button" aria-label="العودة للصفحة الرئيسية">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <span class="header-page-titlee">الفيديوهات</span>
+                <span class="spacer"></span>
+            </div>
+            <div class="page-header">
+                <div class="page-icon">
+                    <i class="fas fa-play-circle"></i>
+                </div>
+                <h2 class="page-title">الفيديوهات</h2>
+                <p class="page-description">مكتبة متنوعة من الفيديوهات التعليمية عالية الجودة</p>
+            </div>
+        </div>
+
+        <!---------------------| Schedules Page Section |--------------------->
+        <div class="page" id="schedules" tabindex="0" role="region" aria-label="صفحة الجداول">
+            <div class="page-header-bar">
+                <button class="back-button" tabindex="0" role="button" aria-label="العودة للصفحة الرئيسية">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <span class="header-page-title">الجداول</span>
+                <span class="spacer"></span>
+            </div>
+            <div class="page-header">
+                <div class="page-icon">
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+                <h2 class="page-title">الجداول</h2>
+                <p class="page-description">نظم وقتك بفعالية مع جداول ذكية ومرنة</p>
+            </div>
+        </div>
+
+        <!---------------------| Buildings Page Section |--------------------->
+        <div class="page" id="buildings" tabindex="0" role="region" aria-label="صفحة المباني">
+            <div class="page-header-bar">
+                <button class="back-button" tabindex="0" role="button" aria-label="العودة للصفحة الرئيسية">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <span class="header-page-title">المباني</span>
+                <span class="spacer"></span>
+            </div>
+            <div class="page-header">
+                <div class="page-icon">
+                    <i class="fas fa-building"></i>
+                </div>
+                <h2 class="page-title">المباني</h2>
+                <p class="page-description">خريطة تفاعلية ودليل شامل لجميع المباني والمرافق</p>
+            </div>
+        </div>
+
+        <!---------------------| Statistics Page Section |--------------------->
+        <div class="page" id="statistics" tabindex="0" role="region" aria-label="صفحة الإحصائيات">
+            <div class="page-header-bar">
+                <button class="back-button" tabindex="0" role="button" aria-label="العودة للصفحة الرئيسية">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <span class="header-page-title">الإحصائيات</span>
+                <span class="spacer"></span>
+            </div>
+            <div class="page-header">
+                <div class="page-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h2 class="page-title">الإحصائيات</h2>
+                <p class="page-description">تحليلات ذكية وتقارير مفصلة لتتبع تقدمك الأكاديمي</p>
+            </div>
+        </div>
+
+        <!---------------------| Links Page Section |--------------------->
+        <div class="page" id="links" tabindex="0" role="region" aria-label="صفحة الروابط">
+            <div class="page-header-bar">
+                <button class="back-button" tabindex="0" role="button" aria-label="العودة للصفحة الرئيسية">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <span class="header-page-title">الروابط</span>
+                <span class="spacer"></span>
+            </div>
+            <div class="page-header">
+                <div class="page-icon">
+                    <i class="fas fa-external-link-alt"></i>
+                </div>
+                <h2 class="page-title">الروابط</h2>
+                <p class="page-description">مجموعة منتقاة من الروابط والموارد الخارجية المفيدة</p>
+            </div>
+        </div>
+
+        <!---------------------| Settings Page Section |--------------------->
+        <div class="page" id="settings" tabindex="0" role="region" aria-label="صفحة الإعدادات">
+            <div class="page-header-bar">
+                <button class="back-button" tabindex="0" role="button" aria-label="العودة للصفحة الرئيسية">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <span class="header-page-title">الإعدادات</span>
+                <span class="spacer"></span>
+            </div>
+
+
+            <!---------------------| Appearance Settings Section |--------------------->
+
+            <div class="settings-section">
+                <h3><i class="fas fa-palette"></i> المظهر</h3>
+                <div class="settings-item">
+                    <div class="settings-item-label">
+                        <i class="fas fa-sun"></i>
+                        الثيم الفاتح
+                    </div>
+                    <div class="settings-item-control">
+                        <div class="toggle-switch" id="themeToggle"></div>
+                    </div>
+                </div>
+                <div class="theme-preview">
+                    <div class="theme-option dark selected">
+                        <i class="fas fa-moon"></i>
+                        داكن
+                    </div>
+                    <div class="theme-option light">
+                        <i class="fas fa-sun"></i>
+                        فاتح
+                    </div>
+                </div>
+            </div>
+
+            <!---------------------| Data Settings Section |--------------------->
+            <div class="settings-section">
+                <h3><i class="fas fa-database"></i> البيانات</h3>
+                <div class="settings-item">
+                    <div class="settings-item-label">
+                        <i class="fas fa-user"></i>
+                        تغيير اسم المستخدم
+                    </div>
+                    <div class="settings-item-control">
+                        <button class="settings-button" id="changeUsernameBtn">تغيير</button>
+                    </div>
+                </div>
+                <div class="settings-item">
+                    <div class="settings-item-label">
+                        <i class="fas fa-trash"></i>
+                        مسح البيانات
+                    </div>
+                    <div class="settings-item-control">
+                        <button class="settings-button" id="clearDataButton">مسح</button>
+                    </div>
+                </div>
+            </div>
+
+            <!---------------------| About Application Section |--------------------->
+            <div class="settings-section">
+                <h3><i class="fas fa-info-circle"></i> حول التطبيق</h3>
+                <div class="settings-item">
+                    <div class="settings-item-label">
+                        <i class="fas fa-code-branch"></i>
+                        الإصدار
+                    </div>
+                    <div class="settings-item-control">
+                        <span style="color: var(--text-secondary);">3.0.0</span>
+                    </div>
+                </div>
+                <div class="settings-item">
+                    <div class="settings-item-label">
+                        <i class="fas fa-user"></i>
+                        المطور
+                    </div>
+                    <div class="settings-item-control">
+                        <span style="color: var(--text-secondary);">دفعتنا</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!---------------------| Bottom Navigation Bar |--------------------->
+    <nav class="bottom-nav" id="bottomNav" aria-label="شريط التنقل السفلي">
+        <div class="nav-items">
+            <div class="nav-item active" tabindex="0" role="button" aria-label="الرئيسية">
+                <span class="nav-text">الرئيسية</span>
+                <span class="nav-icon"><i class="fas fa-home"></i></span>
+            </div>
+            <div class="nav-item" tabindex="0" role="button" aria-label="محاضرات">
+                <span class="nav-text">محاضرات</span>
+                <span class="nav-icon"><i class="fas fa-book-open"></i></span>
+            </div>
+            <div class="nav-item" tabindex="0" role="button" aria-label="ملخصات">
+                <span class="nav-text">ملخصات</span>
+                <span class="nav-icon"><i class="fas fa-file-alt"></i></span>
+            </div>
+            <div class="nav-item" tabindex="0" role="button" aria-label="فيديوهات">
+                <span class="nav-text">فيديوهات</span>
+                <span class="nav-icon"><i class="fas fa-play-circle"></i></span>
+            </div>
+            <div class="nav-item" tabindex="0" role="button" aria-label="إعدادات">
+                <span class="nav-text">إعدادات</span>
+                <span class="nav-icon"><i class="fas fa-cog"></i></span>
+            </div>
+        </div>
+    </nav>
+    </div>
+
+    <!---------------------| Bottom Navigation Overlay |--------------------->
+    <div class="bottom-nav-overlay" id="bottomNavOverlay"></div>
+
+    <!---------------------| Notification Container |--------------------->
+    <div class="notification-container" id="notificationContainer"></div>
+
+    <!---------------------| Username Modal |--------------------->
+    <div class="modal-overlay" id="usernameModal">
+        <div class="modal-content">
+            <h2>مرحباً بك في دفعتنا!</h2>
+            <p>يرجى إدخال اسمك الأول لنبدأ</p>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 20px; text-align: center;">
+                <i class="fas fa-lock" style="margin-left: 8px;"></i>
+                اسمك الشخصي ومحتوى تجربتك محمي ولا يمكن لأحد غيرك رؤيته
+            </p>
+            <input type="text" id="usernameInput" placeholder="اسمك الأول" maxlength="20">
+            <div class="modal-buttons">
+                <button id="saveUsernameBtn">حفظ</button>
+            </div>
+            <p class="error-message" id="usernameError"></p>
+        </div>
+    </div>
+
+    <!---------------------| Change Username Modal |--------------------->
+    <div class="modal-overlay" id="changeUsernameModal">
+        <div class="modal-content">
+            <h2>تغيير اسم المستخدم</h2>
+            <p>أدخل اسمك الجديد</p>
+            <input type="text" id="newUsernameInput" placeholder="اسمك الجديد" maxlength="20">
+            <div class="modal-buttons">
+                <button id="saveNewUsernameBtn">حفظ</button>
+                <button id="cancelChangeUsernameBtn">إلغاء</button>
+            </div>
+            <p class="error-message" id="changeUsernameError"></p>
+        </div>
+    </div>
+
+    <script src="src/JavaScript/main.js"></script>
+    <script src="src/JavaScript/settings.js"></script>
+    <script src="src/JavaScript/notifications.js"></script>
+    <script src="src/JavaScript/lectures.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
