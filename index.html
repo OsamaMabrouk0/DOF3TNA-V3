@@ -82,22 +82,100 @@
         </div>
 
         <!---------------------| Lectures Page Section |--------------------->
-        <div class="page" id="lectures" tabindex="0" role="region" aria-label="صفحة المحاضرات">
-            <div class="page-header-bar">
-                <button class="back-button" tabindex="0" role="button" aria-label="العودة للصفحة الرئيسية">
-                    <i class="fas fa-arrow-right"></i>
-                </button>
-                <span class="header-page-title">المحاضرات</span>
-                <span class="spacer"></span>
-            </div>
-            <div class="page-header">
-                <div class="page-icon">
-                    <i class="fas fa-book-open"></i>
+    <div class="page" id="lectures" tabindex="0" role="region" aria-label="صفحة المحاضرات">
+        <div class="page-header-bar">
+            <button class="back-button" tabindex="0" role="button" aria-label="العودة للصفحة الرئيسية">
+                <i class="fas fa-arrow-right"></i>
+            </button>
+            <span class="header-page-title">المحاضرات</span>
+            <span class="spacer"></span>
+        </div>
+
+        <div class="lectures-container">
+            <div class="subjects-grid" id="subjectsGrid">
+                <!-- Shimmer loading cards will be dynamically inserted here -->
+                <div class="shimmer-wrapper">
+                    <div class="shimmer-header">
+                        <div class="shimmer-circle"></div>
+                        <div class="shimmer-info">
+                            <div class="shimmer-line title"></div>
+                            <div class="shimmer-line stats"></div>
+                        </div>
+                    </div>
+                    <div class="shimmer-button"></div>
                 </div>
-                <h2 class="page-title">المحاضرات</h2>
-                <p class="page-description">استكشف مكتبة شاملة من المحاضرات التفاعلية والموارد التعليمية المتطورة</p>
+                <div class="shimmer-wrapper">
+                    <div class="shimmer-header">
+                        <div class="shimmer-circle"></div>
+                        <div class="shimmer-info">
+                            <div class="shimmer-line title"></div>
+                            <div class="shimmer-line stats"></div>
+                        </div>
+                    </div>
+                    <div class="shimmer-button"></div>
+                </div>
+                <div class="shimmer-wrapper">
+                    <div class="shimmer-header">
+                        <div class="shimmer-circle"></div>
+                        <div class="shimmer-info">
+                            <div class="shimmer-line title"></div>
+                            <div class="shimmer-line stats"></div>
+                        </div>
+                    </div>
+                    <div class="shimmer-button"></div>
+                </div>
+                <div class="shimmer-wrapper">
+                    <div class="shimmer-header">
+                        <div class="shimmer-circle"></div>
+                        <div class="shimmer-info">
+                            <div class="shimmer-line title"></div>
+                            <div class="shimmer-line stats"></div>
+                        </div>
+                    </div>
+                    <div class="shimmer-button"></div>
+                </div>
+                <div class="shimmer-wrapper">
+                    <div class="shimmer-header">
+                        <div class="shimmer-circle"></div>
+                        <div class="shimmer-info">
+                            <div class="shimmer-line title"></div>
+                            <div class="shimmer-line stats"></div>
+                        </div>
+                    </div>
+                    <div class="shimmer-button"></div>
+                </div>
+
+                <div class="shimmer-wrapper">
+                    <div class="shimmer-header">
+                        <div class="shimmer-circle"></div>
+                        <div class="shimmer-info">
+                            <div class="shimmer-line title"></div>
+                            <div class="shimmer-line stats"></div>
+                        </div>
+                    </div>
+                    <div class="shimmer-button"></div>
+                </div>
             </div>
         </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div class="Lectures-modal-overlay" id="filesModal" role="dialog" aria-modal="true" aria-labelledby="modalSubjectTitle"
+        tabindex="-1">
+        <div class="Lectures-modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modalSubjectTitle"></h3>
+                <button class="modal-close-button" onclick="closeModal()" aria-label="إغلاق النافذة">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="files-list-container">
+                <div class="files-list" id="modalFilesList">
+                    <!-- File items will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
 
         <!---------------------| Summaries Page Section |--------------------->
         <div class="page" id="summaries" tabindex="0" role="region" aria-label="صفحة الملخصات">
